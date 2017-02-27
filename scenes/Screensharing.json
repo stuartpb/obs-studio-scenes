@@ -1,5 +1,7 @@
 {
     "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -23,6 +25,8 @@
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -45,8 +49,37 @@
         "sync": 0,
         "volume": 0.91267293691635132
     },
+    "current_program_scene": "screen with cam",
     "current_scene": "screen with cam",
+    "current_transition": "Fade",
+    "modules": {
+        "auto-scene-switcher": {
+            "active": false,
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "switches": []
+        },
+        "captions": {
+            "enabled": false,
+            "lang_id": 1033,
+            "source": ""
+        },
+        "output-timer": {
+            "autoStartRecordTimer": false,
+            "autoStartStreamTimer": false,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 0,
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 0
+        }
+    },
     "name": "Screensharing",
+    "preview_locked": false,
+    "quick_transitions": [],
+    "scaling_mode": 0,
     "scene_order": [
         {
             "name": "screen with cam"
@@ -54,6 +87,106 @@
     ],
     "sources": [
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "muted": false,
+            "name": "PayPal beg",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color1": 4294967295,
+                "drop_shadow": false,
+                "font": {
+                    "face": "Blue Highway",
+                    "flags": 1,
+                    "size": 32,
+                    "style": ""
+                },
+                "outline": true,
+                "text": "https://paypal.me/stuartpb"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "wasapi_input_capture",
+            "mixers": 15,
+            "muted": false,
+            "name": "Audio Input Capture",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "{0.0.1.00000000}.{2a710e5a-c793-403d-8112-218a40b1ec3f}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 1,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 15,
+            "muted": false,
+            "name": "Video Capture Device",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "last_video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "monitor_capture",
+            "mixers": 0,
+            "muted": false,
+            "name": "Display Capture",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -85,6 +218,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Display Capture",
                         "pos": {
                             "x": 0.0,
@@ -95,6 +232,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -105,6 +243,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Video Capture Device",
                         "pos": {
                             "x": 887.0,
@@ -115,6 +257,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -125,6 +268,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "Audio Input Capture",
                         "pos": {
                             "x": 0.0,
@@ -135,6 +282,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -145,6 +293,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "PayPal beg",
                         "pos": {
                             "x": 969.0,
@@ -155,102 +307,15 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
             },
             "sync": 0,
             "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "monitor_capture",
-            "mixers": 0,
-            "muted": false,
-            "name": "Display Capture",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 1,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "dshow_input",
-            "mixers": 15,
-            "muted": false,
-            "name": "Video Capture Device",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "last_video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
-                "video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "wasapi_input_capture",
-            "mixers": 15,
-            "muted": false,
-            "name": "Audio Input Capture",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "{0.0.1.00000000}.{2a710e5a-c793-403d-8112-218a40b1ec3f}"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "muted": false,
-            "name": "PayPal beg",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4294967295,
-                "drop_shadow": false,
-                "font": {
-                    "face": "Blue Highway",
-                    "flags": 1,
-                    "size": 32,
-                    "style": ""
-                },
-                "outline": true,
-                "text": "https://paypal.me/stuartpb"
-            },
-            "sync": 0,
-            "volume": 1.0
         }
-    ]
+    ],
+    "transition_duration": 300,
+    "transitions": []
 }

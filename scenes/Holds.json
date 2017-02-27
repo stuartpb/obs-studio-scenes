@@ -1,5 +1,7 @@
 {
     "AuxAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -23,6 +25,8 @@
         "volume": 1.0
     },
     "DesktopAudioDevice1": {
+        "deinterlace_field_order": 0,
+        "deinterlace_mode": 0,
         "enabled": true,
         "flags": 0,
         "hotkeys": {
@@ -45,8 +49,37 @@
         "sync": 0,
         "volume": 0.91267293691635132
     },
+    "current_program_scene": "rca",
     "current_scene": "rca",
+    "current_transition": "Fade",
+    "modules": {
+        "auto-scene-switcher": {
+            "active": false,
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "switches": []
+        },
+        "captions": {
+            "enabled": false,
+            "lang_id": 1033,
+            "source": ""
+        },
+        "output-timer": {
+            "autoStartRecordTimer": false,
+            "autoStartStreamTimer": false,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 0,
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 0
+        }
+    },
     "name": "Holds",
+    "preview_locked": false,
+    "quick_transitions": [],
+    "scaling_mode": 0,
     "scene_order": [
         {
             "name": "rca"
@@ -57,89 +90,103 @@
     ],
     "sources": [
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.1khz": [],
-                "libobs.hide_scene_item.Image": [],
-                "libobs.show_scene_item.1khz": [],
-                "libobs.show_scene_item.Image": []
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "ffmpeg_source",
+            "mixers": 15,
             "muted": false,
-            "name": "smpte bars",
+            "name": "2600hz",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1680.0,
-                            "y": 1050.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 3,
-                        "name": "Image",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "name": "1khz",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "visible": true
-                    }
-                ]
+                "is_local_file": true,
+                "local_file": "C:/Users/Stuart/Downloads/2600hz4s.ogg",
+                "looping": true
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 15,
+            "muted": false,
+            "name": "1khz",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "advanced": false,
+                "is_local_file": true,
+                "local_file": "C:/Users/Stuart/Downloads/1khz42.ogg",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
             "muted": false,
-            "name": "Image",
+            "name": "nocirc",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Stuart/Downloads/SMPTE_Color_Bars_16x9.png"
+                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern_nocirc.png"
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "muted": false,
+            "name": "indian head",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern.JPG"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {
@@ -169,6 +216,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "nocirc",
                         "pos": {
                             "x": 0.0,
@@ -179,6 +230,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -189,6 +241,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "indian head",
                         "pos": {
                             "x": 0.0,
@@ -199,6 +255,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     },
                     {
@@ -209,6 +266,10 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
                         "name": "2600hz",
                         "pos": {
                             "x": 0.0,
@@ -219,6 +280,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
+                        "scale_filter": "disable",
                         "visible": true
                     }
                 ]
@@ -227,91 +289,103 @@
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
             "muted": false,
-            "name": "indian head",
+            "name": "Image",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern.JPG"
+                "file": "C:/Users/Stuart/Downloads/SMPTE_Color_Bars_16x9.png"
             },
             "sync": 0,
             "volume": 1.0
         },
         {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.1khz": [],
+                "libobs.hide_scene_item.Image": [],
+                "libobs.show_scene_item.1khz": [],
+                "libobs.show_scene_item.Image": []
+            },
+            "id": "scene",
             "mixers": 0,
             "muted": false,
-            "name": "nocirc",
+            "name": "smpte bars",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern_nocirc.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 15,
-            "muted": false,
-            "name": "1khz",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "advanced": false,
-                "is_local_file": true,
-                "local_file": "C:/Users/Stuart/Downloads/1khz42.ogg",
-                "looping": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 15,
-            "muted": false,
-            "name": "2600hz",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "is_local_file": true,
-                "local_file": "C:/Users/Stuart/Downloads/2600hz4s.ogg",
-                "looping": true
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1680.0,
+                            "y": 1050.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 3,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "Image",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "name": "1khz",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
             "volume": 1.0
         }
-    ]
+    ],
+    "transition_duration": 300,
+    "transitions": []
 }
