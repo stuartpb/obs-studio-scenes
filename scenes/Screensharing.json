@@ -12,6 +12,7 @@
         },
         "id": "wasapi_input_capture",
         "mixers": 15,
+        "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
         "push-to-mute": false,
@@ -37,7 +38,8 @@
         },
         "id": "wasapi_output_capture",
         "mixers": 15,
-        "muted": false,
+        "monitoring_type": 0,
+        "muted": true,
         "name": "Desktop Audio",
         "push-to-mute": false,
         "push-to-mute-delay": 0,
@@ -47,10 +49,10 @@
             "device_id": "default"
         },
         "sync": 0,
-        "volume": 0.91267293691635132
+        "volume": 1.0
     },
-    "current_program_scene": "screen with cam",
-    "current_scene": "screen with cam",
+    "current_program_scene": "Screen and Cam",
+    "current_scene": "Screen and Cam",
     "current_transition": "Fade",
     "modules": {
         "auto-scene-switcher": {
@@ -79,13 +81,318 @@
     "name": "Screensharing",
     "preview_locked": false,
     "quick_transitions": [],
+    "saved_preview_projectors": [
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        }
+    ],
+    "saved_projectors": [
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        }
+    ],
     "scaling_mode": 0,
     "scene_order": [
         {
-            "name": "screen with cam"
+            "name": "Screen and Cam"
+        },
+        {
+            "name": "Camera Feeds"
         }
     ],
     "sources": [
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "mask_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Image Mask/Blend",
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "image_path": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/mask-shoulders.png",
+                        "stretch": false,
+                        "type": "mask_color_filter.effect"
+                    },
+                    "sync": 0,
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Seated Webcam Masked",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "deactivate_when_not_showing": true,
+                "last_video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Game Capture": [],
+                "libobs.hide_scene_item.PayPal beg": [],
+                "libobs.hide_scene_item.Screen": [],
+                "libobs.hide_scene_item.Seated Webcam Masked": [],
+                "libobs.show_scene_item.Game Capture": [],
+                "libobs.show_scene_item.PayPal beg": [],
+                "libobs.show_scene_item.Screen": [],
+                "libobs.show_scene_item.Seated Webcam Masked": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Screen and Cam",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "id_counter": 6,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "name": "Screen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 6,
+                        "name": "Game Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 5,
+                        "name": "Seated Webcam Masked",
+                        "pos": {
+                            "x": 887.0,
+                            "y": 570.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 4,
+                        "name": "PayPal beg",
+                        "pos": {
+                            "x": 969.0,
+                            "y": 1010.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "monitor_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Screen",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 1,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 15,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Seated Webcam Full",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "active": true,
+                "deactivate_when_not_showing": true,
+                "last_video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
+                "video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
         {
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
@@ -94,6 +401,7 @@
             "hotkeys": {},
             "id": "text_ft2_source",
             "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
             "name": "PayPal beg",
             "push-to-mute": false,
@@ -121,94 +429,21 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "wasapi_input_capture",
-            "mixers": 15,
-            "muted": false,
-            "name": "Audio Input Capture",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "{0.0.1.00000000}.{2a710e5a-c793-403d-8112-218a40b1ec3f}"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 1,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "dshow_input",
-            "mixers": 15,
-            "muted": false,
-            "name": "Video Capture Device",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "last_video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}",
-                "video_device_id": "Logitech HD Webcam C310:\\\\?\\usb#22vid_046d&pid_081b&mi_00#228&e71b29a&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "monitor_capture",
-            "mixers": 0,
-            "muted": false,
-            "name": "Display Capture",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Audio Input Capture": [],
-                "libobs.hide_scene_item.Display Capture": [],
-                "libobs.hide_scene_item.PayPal beg": [],
-                "libobs.hide_scene_item.Video Capture Device": [],
-                "libobs.show_scene_item.Audio Input Capture": [],
-                "libobs.show_scene_item.Display Capture": [],
-                "libobs.show_scene_item.PayPal beg": [],
-                "libobs.show_scene_item.Video Capture Device": []
+                "libobs.hide_scene_item.Seated Webcam Full": [],
+                "libobs.show_scene_item.Seated Webcam Full": []
             },
             "id": "scene",
             "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
-            "name": "screen with cam",
+            "name": "Camera Feeds",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
@@ -222,96 +457,44 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "name": "Display Capture",
+                        "id": 1,
+                        "name": "Seated Webcam Full",
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": -105.0
                         },
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Video Capture Device",
-                        "pos": {
-                            "x": 887.0,
-                            "y": 570.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Audio Input Capture",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "PayPal beg",
-                        "pos": {
-                            "x": 969.0,
-                            "y": 1010.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 2.625,
+                            "y": 2.625
                         },
                         "scale_filter": "disable",
                         "visible": true
                     }
                 ]
             },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "hotkey_start": [],
+                "hotkey_stop": []
+            },
+            "id": "game_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Game Capture",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
             "sync": 0,
             "volume": 1.0
         }

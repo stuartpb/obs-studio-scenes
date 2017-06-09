@@ -12,6 +12,7 @@
         },
         "id": "wasapi_input_capture",
         "mixers": 15,
+        "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux",
         "push-to-mute": false,
@@ -37,6 +38,7 @@
         },
         "id": "wasapi_output_capture",
         "mixers": 15,
+        "monitoring_type": 0,
         "muted": false,
         "name": "Desktop Audio",
         "push-to-mute": false,
@@ -79,6 +81,70 @@
     "name": "Holds",
     "preview_locked": false,
     "quick_transitions": [],
+    "saved_preview_projectors": [
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        },
+        {
+            "saved_preview_projectors": 0
+        }
+    ],
+    "saved_projectors": [
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        },
+        {
+            "saved_projectors": ""
+        }
+    ],
     "scaling_mode": 0,
     "scene_order": [
         {
@@ -95,51 +161,77 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.1khz": [],
+                "libobs.hide_scene_item.Image": [],
+                "libobs.show_scene_item.1khz": [],
+                "libobs.show_scene_item.Image": []
             },
-            "id": "ffmpeg_source",
-            "mixers": 15,
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
-            "name": "2600hz",
+            "name": "smpte bars",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "is_local_file": true,
-                "local_file": "C:/Users/Stuart/Downloads/2600hz4s.ogg",
-                "looping": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 15,
-            "muted": false,
-            "name": "1khz",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "advanced": false,
-                "is_local_file": true,
-                "local_file": "C:/Users/Stuart/Downloads/1khz42.ogg",
-                "looping": true
+                "id_counter": 2,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1680.0,
+                            "y": 1050.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 3,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 1,
+                        "name": "Image",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "id": 2,
+                        "name": "1khz",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
             "volume": 1.0
@@ -152,34 +244,15 @@
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
-            "name": "nocirc",
+            "name": "Image",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern_nocirc.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "muted": false,
-            "name": "indian head",
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/Stuart/Downloads/RCA_Indian_Head_test_pattern.JPG"
+                "file": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/SMPTE_Color_Bars_16x9.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -200,6 +273,7 @@
             },
             "id": "scene",
             "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
             "name": "rca",
             "push-to-mute": false,
@@ -207,6 +281,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
@@ -220,6 +295,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 1,
                         "name": "nocirc",
                         "pos": {
                             "x": 0.0,
@@ -245,6 +321,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 2,
                         "name": "indian head",
                         "pos": {
                             "x": 0.0,
@@ -270,6 +347,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
+                        "id": 3,
                         "name": "2600hz",
                         "pos": {
                             "x": 0.0,
@@ -296,14 +374,36 @@
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
+            "monitoring_type": 0,
             "muted": false,
-            "name": "Image",
+            "name": "indian head",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Stuart/Downloads/SMPTE_Color_Bars_16x9.png"
+                "file": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/RCA_Indian_Head_test_pattern.JPG"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "nocirc",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/RCA_Indian_Head_test_pattern_nocirc.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -314,73 +414,55 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.1khz": [],
-                "libobs.hide_scene_item.Image": [],
-                "libobs.show_scene_item.1khz": [],
-                "libobs.show_scene_item.Image": []
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
             },
-            "id": "scene",
-            "mixers": 0,
+            "id": "ffmpeg_source",
+            "mixers": 15,
+            "monitoring_type": 0,
             "muted": false,
-            "name": "smpte bars",
+            "name": "1khz",
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1680.0,
-                            "y": 1050.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 3,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "Image",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "name": "1khz",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "advanced": false,
+                "is_local_file": true,
+                "local_file": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/1khz1m.ogg",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 15,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "2600hz",
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "is_local_file": true,
+                "local_file": "C:/Users/Stuart/Documents/GitHub/obs-studio-scenes/resources/2600hz4s.ogg",
+                "looping": true
             },
             "sync": 0,
             "volume": 1.0
